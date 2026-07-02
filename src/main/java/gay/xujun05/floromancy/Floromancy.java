@@ -1,5 +1,6 @@
 package gay.xujun05.floromancy;
 
+import gay.xujun05.floromancy.block.BlockRegistry;
 import gay.xujun05.floromancy.item.ItemRegistry;
 import net.fabricmc.api.ModInitializer;
 
@@ -19,6 +20,7 @@ public class Floromancy implements ModInitializer {
 	@Override
 	public void onInitialize() {
         ItemRegistry.initialize();
+        BlockRegistry.initialize();
 		LOGGER.info("Hello flower world!");
 	}
 
