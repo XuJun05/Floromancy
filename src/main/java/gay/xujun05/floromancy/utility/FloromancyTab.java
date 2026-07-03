@@ -20,6 +20,8 @@ public class FloromancyTab {
             .icon(() -> new ItemStack(ItemRegistry.TEST))
             .title(Component.translatable("creativeTab.whimsy"))
             .displayItems((parameters, output) -> {
+                //ツール？
+                output.accept(ItemRegistry.FLORA_TOME);
                 //アイテム類
                 output.accept(ItemRegistry.TEST);
                 //ブろっく類
